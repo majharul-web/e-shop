@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  color: #17201d;
+}
+
+p {
+  margin-bottom: 0.5rem;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem;
+}
+.bold {
+  font-weight: 700;
+}
+
+b,
+strong {
+  font-weight: 700;
+}
+
+em,
+i {
+  font-style: italic;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.bg-light {
+  background-color: #fff !important;
+}
+.bg-light-2 {
+  background-color: #fafafa !important;
+}
+
+.text-primary {
+  color: var(--theme-color);
+}
+.text-secondary {
+  color: var(--primary-color);
+}
+.text-muted {
+  color: var(--gray-color);
+}
+
+// btn
+
+.btn-dark {
+  background-color: #17201d;
+  border-radius: 4px;
+  font-weight: 500;
+  display: block;
+  width: 100%;
+}
+
+/* Type */
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  color: var(--primary-color);
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+
+  &:hover,
+  &:focus {
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+}
+
+.link-underline {
+  box-shadow: 0 1px 0 0 #cc9966;
+}
+
+.text-primary {
+  color: #cc9966 !important;
+}
+
+.text-secondary {
+  color: #a6c76c !important;
+}
+
+.text-dark {
+  color: #333 !important;
+}
+
+.text-light {
+  color: #ccc !important;
+}
+
+.line-throw {
+  text-decoration: line-through;
+}
+
+.flex {
+  display: flex;
+}
+
+.aCenter {
+  display: flex;
+  align-items: center;
+}
+.flexBetween {
+  display: flex;
+  justify-content: space-between;
+}
+.flexCenter {
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 600px) {
+  .container-fluid {
+    width: 100%;
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .btn {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  h1,
+  .h1 {
+    font-size: 3rem;
+  }
+
+  h2,
+  .h2 {
+    font-size: 1.7rem;
+  }
+
+  h3,
+  .h3 {
+    font-size: 1.3rem;
+  }
+
+  h4,
+  .h4 {
+    font-size: 1rem;
+  }
+}
