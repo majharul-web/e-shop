@@ -3,6 +3,7 @@ import tv1 from '../../assets/products/tv1.png'
 import { FaStar } from 'react-icons/fa';
 import { BsArrowDownUp, BsHeart, BsEye } from 'react-icons/bs';
 import ProductSlider from './ProductSlider';
+import LazyImage from '../common/LazyImage';
 
 const FlashProduct = ({ product }) => {
     const { type, category, title, rating, salePrice, offerPrice, image, slides } = product
@@ -23,7 +24,8 @@ const FlashProduct = ({ product }) => {
                 </div>)
                     :
                     (<div className='flexCenter py-2 py-lg-3'>
-                        <img src={image} alt="" />
+                        <LazyImage imageSrc={image} classes="" />
+
                     </div>)
             }
 

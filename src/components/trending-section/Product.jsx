@@ -1,13 +1,14 @@
 import React from 'react';
 import { FaStar } from 'react-icons/fa';
+import LazyImage from '../common/LazyImage';
 
 const Product = ({ product }) => {
 
   return <div className='trending-product-card'>
     <span className='sale-badge'>Sale</span>
-    <div className="flex aCenter">
+    <div className="flex aCenter py-0 py-lg-3">
       <div className='col-3 flexCenter'>
-        <img className='product-img' src={product.image} alt="" />
+        <LazyImage imageSrc={product.image} classes="product-img" />
       </div>
       <div className='col-9'>
         <p className='rating'>
