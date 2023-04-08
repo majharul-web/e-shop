@@ -2,17 +2,27 @@ import React, { useState } from 'react';
 import tv1 from '../../assets/products/tv1.png'
 import { FaStar } from 'react-icons/fa';
 import { BsArrowDownUp, BsHeart, BsEye } from 'react-icons/bs';
+import ProductSlider from './ProductSlider';
 
 const FlashProduct = ({ product }) => {
-    const { type, category, title, rating, salePrice, offerPrice } = product
+    const { type, category, title, rating, salePrice, offerPrice, image, slides } = product
     const [hover, setHover] = useState("false")
     console.log("hover", hover);
     return (
         <div className="flash-product-card mt-3" onMouseOver={() => setHover(true)} onMouseOut={() => setHover(false)}>
             <span className={`${type === "Sale" ? 'sale-badge' : 'new-badge '}`}>{type}</span>
-            <div className='flexCenter mt-2'>
-                <img src={tv1} alt="" />
-            </div>
+
+            {
+                hover ? (<div className='flexCenter aCenter py-3'>
+                    <ProductSlider slides={slides} />
+                </div>)
+                    :
+                    (<div className='flexCenter py-4'>
+                        <img src={image} alt="" />
+                    </div>)
+            }
+
+
             <div className='body'>
                 <span className='text-muted fs-12'>{category}</span>
                 <a href="#" className='title d-block '>{title}</a>
