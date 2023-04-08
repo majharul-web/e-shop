@@ -12,7 +12,7 @@ const TrendingSection = () => {
                 <div className='products-section'>
                     <div className="row">
                         {
-                            trendingProducts.map(((cat, index) => <TrendingCat index={index} cat={cat} key={index} />))
+                            trendingProducts.map(((cat, index) => <TrendingCat cat={cat} key={index} />))
                         }
                     </div>
                 </div>

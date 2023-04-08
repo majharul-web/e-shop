@@ -7,6 +7,11 @@
   }
 }
 
+.middle-border {
+  border-left: 1px solid #f2f2f2;
+  border-right: 1px solid #f2f2f2;
+}
+
 .custom-card {
   border: 1px solid #f2f2f2;
   padding: 1rem;
@@ -77,6 +82,9 @@
     }
 
     .details {
+      border-top: 1px solid #f2f2f2;
+      border-bottom: 1px solid #f2f2f2;
+
       .d-btn {
         width: 35px;
         height: 35px;
@@ -183,11 +191,11 @@
 @media only screen and (max-width: 1400px) {
   .flash-banner {
     img {
-      height: 418px;
+      height: 427px;
     }
   }
   .flash-product-section .flash-product-card {
-    height: 380px !important;
+    height: 390px !important;
   }
 }
 @media only screen and (max-width: 1200px) {

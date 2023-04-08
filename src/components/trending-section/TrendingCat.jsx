@@ -2,7 +2,7 @@ import React from 'react';
 import { BsArrowLeftShort, BsArrowRightCircleFill } from 'react-icons/bs';
 import { splitString } from '../../utils/helper';
 import Product from './Product';
-const TrendingCat = ({ cat, index }) => {
+const TrendingCat = ({ cat }) => {
     const { category, products } = cat
     const titleArr = splitString(category);
     return (

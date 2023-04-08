@@ -56,7 +56,7 @@ const FlashSaleSection = () => {
 
                         <div className="flash-product-section">
                             {
-                                flashProducts.map(product => <FlashProduct product={product} />)
+                                flashProducts.map((product, id) => <FlashProduct product={product} key={id} />)
                             }
                         </div>
                         {/* end flash products section  */}

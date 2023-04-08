@@ -13,9 +13,6 @@ const Slide = (slideSrc) => {
 };
 
 const ProductSlider = ({ slides }) => {
-
-
-
     const settings = {
         dots: true,
         infinite: true,
@@ -24,24 +21,11 @@ const ProductSlider = ({ slides }) => {
         slidesToScroll: 1
     };
 
-
     return (
         <Slider {...settings}>
-
             {
-                slides.map(slide => <Slide slideSrc={slide} />)
+                slides.map((slide, index) => <Slide key={index} slideSrc={slide} />)
             }
-            {/* <div>
-                <img src="https://i.ibb.co/JKjGRff/tv2.png" alt="" />
-            </div>
-            <div>
-                <img src="https://i.ibb.co/JKjGRff/tv2.png" alt="" />
-            </div>
-            <div>
-                <img src="https://i.ibb.co/JKjGRff/tv2.png" alt="" />
-            </div> */}
-
-
         </Slider>
     );
 };

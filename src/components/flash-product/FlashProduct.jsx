@@ -24,7 +24,7 @@ const FlashProduct = ({ product }) => {
                     <ProductSlider slides={slides} />
                 </div>)
                     :
-                    (<div className='flexCenter py-2 py-lg-3'>
+                    (<div className='flexCenter py-2 py-lg-4 py-lg-3'>
                         <LazyImage imageSrc={image} classes="" />
 
                     </div>)
@@ -37,13 +37,15 @@ const FlashProduct = ({ product }) => {
 
 
                 {
-                    hover ? (<div className='details flexBetween aCenter'>
+                    hover ? (<div className='details flexBetween aCenter my-1 p-1'>
                         <span className='d-btn'>
                             <BsEye />
                         </span>
-                        <span className='d-btn'>
-                            <BsHeart />
-                        </span>
+                        <p className='mb-0 d-inline-block middle-border px-2'>
+                            <span className='d-btn '>
+                                <BsHeart />
+                            </span>
+                        </p>
                         <span className='d-btn'>
                             <BsArrowDownUp />
                         </span>
@@ -66,10 +68,6 @@ const FlashProduct = ({ product }) => {
                         </div>)
 
                 }
-
-
-
-
 
                 <div className='mt-2'>
                     <button className='btn btn-cart'>Add to Cart</button>
