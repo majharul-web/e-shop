@@ -69,8 +69,25 @@ img {
   background-color: #17201d;
   border-radius: 4px;
   font-weight: 500;
+  font-size: 14px;
   display: block;
   width: 100%;
+}
+
+.btn-cart {
+  color: #5b9982;
+  background-color: #eaefec;
+
+  border-radius: 4px;
+  font-size: 14px;
+  display: block;
+  width: 100%;
+
+  &:hover {
+    background-color: #5b9982;
+    color: #fff;
+    transition: linear 0.5s;
+  }
 }
 
 /* Type */
@@ -129,6 +146,12 @@ a {
   text-decoration: line-through;
 }
 
+.fs-12 {
+  font-size: 12px;
+}
+
+// flexbox
+
 .flex {
   display: flex;
 }
@@ -162,17 +185,17 @@ a {
 @media only screen and (min-width: 768px) {
   h1,
   .h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 
   h2,
   .h2 {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
   }
 
   h3,
   .h3 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 
   h4,
