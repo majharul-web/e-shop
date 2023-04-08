@@ -1,6 +1,6 @@
 # Website Name: e-shop.
 
-Website Live Link: [ToDo App](https://e-shopme.netlify.app/).
+Website Live Link: [https://e-shopme.netlify.app/](https://e-shopme.netlify.app/).
 
 ### `Run project`
 

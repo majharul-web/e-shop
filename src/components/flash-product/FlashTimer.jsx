@@ -2,7 +2,7 @@ import React from 'react';
 import Countdown from 'react-countdown';
 
 
-// Random component
+// completed component
 const Completionist = () => (
     <span className='pt-3 text-danger bold'>
         Deals closed

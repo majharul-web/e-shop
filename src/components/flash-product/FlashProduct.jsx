@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import tv1 from '../../assets/products/tv1.png'
 import { FaStar } from 'react-icons/fa';
 import { BsArrowDownUp, BsHeart, BsEye } from 'react-icons/bs';
 import ProductSlider from './ProductSlider';
@@ -8,7 +7,7 @@ import LazyImage from '../common/LazyImage';
 const FlashProduct = ({ product }) => {
     const { type, category, title, rating, salePrice, offerPrice, image, slides } = product
     const [hover, setHover] = useState("false")
-    console.log("hover", hover);
+
 
     useEffect(() => {
         setHover(false)
@@ -17,6 +16,8 @@ const FlashProduct = ({ product }) => {
     return (
         <div className="flash-product-card mt-3" onMouseOver={() => setHover(true)} onMouseOut={() => setHover(false)}>
             <span className={`${type === "Sale" ? 'sale-badge' : 'new-badge '}`}>{type}</span>
+
+            {/* show and hide slider on hover */}
 
             {
                 hover ? (<div className='flexCenter aCenter py-3'>

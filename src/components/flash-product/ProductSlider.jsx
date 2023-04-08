@@ -3,19 +3,14 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-
-
-
 const Slide = (slideSrc) => {
-    console.log("image", slideSrc)
+
     return (
         <div>
             <img src={slideSrc.slideSrc} alt="not fount" />
         </div>
     );
 };
-
-
 
 const ProductSlider = ({ slides }) => {
 
