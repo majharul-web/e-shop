@@ -4,7 +4,7 @@ import FlashSaleSection from './includes/FlashSaleSection';
 
 const Home = () => {
     return (
-        <div className='bg-light-2 py-2'>
+        <div className='py-2'>
             <FlashSaleSection />
             <TrendingSection />
         </div>

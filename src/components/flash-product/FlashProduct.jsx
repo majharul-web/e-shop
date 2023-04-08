@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import tv1 from '../../assets/products/tv1.png'
 import { FaStar } from 'react-icons/fa';
 import { BsArrowDownUp, BsHeart, BsEye } from 'react-icons/bs';
@@ -8,6 +8,11 @@ const FlashProduct = ({ product }) => {
     const { type, category, title, rating, salePrice, offerPrice, image, slides } = product
     const [hover, setHover] = useState("false")
     console.log("hover", hover);
+
+    useEffect(() => {
+        setHover(false)
+    }, [])
+
     return (
         <div className="flash-product-card mt-3" onMouseOver={() => setHover(true)} onMouseOut={() => setHover(false)}>
             <span className={`${type === "Sale" ? 'sale-badge' : 'new-badge '}`}>{type}</span>
@@ -17,7 +22,7 @@ const FlashProduct = ({ product }) => {
                     <ProductSlider slides={slides} />
                 </div>)
                     :
-                    (<div className='flexCenter py-4'>
+                    (<div className='flexCenter py-2 py-lg-3'>
                         <img src={image} alt="" />
                     </div>)
             }

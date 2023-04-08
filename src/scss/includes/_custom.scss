@@ -29,6 +29,12 @@
 
 // flash-sale section
 
+.flash-banner {
+  img {
+    height: 450px;
+  }
+}
+
 .count {
   font-weight: 700;
   font-size: 14px;
@@ -42,6 +48,10 @@
   .flash-product-card {
     @extend .custom-card;
     position: relative;
+    height: 415px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     .body {
       .title {
         font-weight: 500;
@@ -174,6 +184,16 @@
 
 // responsiveness
 
+@media only screen and (max-width: 1400px) {
+  .flash-banner {
+    img {
+      height: 418px;
+    }
+  }
+  .flash-product-section .flash-product-card {
+    height: 380px !important;
+  }
+}
 @media only screen and (max-width: 1200px) {
   .flash-product-section {
     grid-template-columns: 1fr 1fr 1fr;
@@ -188,5 +208,14 @@
   }
   .timer p .count {
     font-size: 0.9rem;
+  }
+
+  .flash-banner {
+    img {
+      height: auto !important;
+    }
+  }
+  .flash-product-section .flash-product-card {
+    height: auto !important;
   }
 }
